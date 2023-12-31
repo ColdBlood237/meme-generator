@@ -30,6 +30,7 @@ body {
 main {
   padding: 28px 37px;
   width: 100vw;
+  text-align: center;
 }
 
 #meme-form {
@@ -39,6 +40,7 @@ main {
   grid-template-columns: 1fr 1fr;
   column-gap: 33px;
   row-gap: 15px;
+  text-align: left;
 }
 
 #meme-form label {
@@ -77,4 +79,9 @@ main {
   font-style: normal;
   font-weight: 700;
   letter-spacing: -0.5px;
+}
+
+.meme-image {
+  max-width: 450px;
+  margin-top: 12px;
 }
