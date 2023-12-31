@@ -6,9 +6,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <section className="main">
-        <Meme />
-      </section>
+      <Meme />
     </>
   );
 }

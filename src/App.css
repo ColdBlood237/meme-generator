@@ -27,14 +27,18 @@ body {
   letter-spacing: -2px;
 }
 
-.main {
+main {
   padding: 28px 37px;
   width: 100vw;
 }
 
 #meme-form {
-  max-width: 405px;
+  max-width: 450px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 33px;
+  row-gap: 15px;
 }
 
 #meme-form label {
@@ -55,12 +59,6 @@ body {
   box-shadow: 0px 1px 1.5px 0px rgba(0, 0, 0, 0.05);
 }
 
-.flex-container {
-  display: flex;
-  margin-bottom: 15px;
-  gap: 33px;
-}
-
 .input-wrapper {
   display: flex;
   flex-direction: column;
@@ -74,6 +72,7 @@ body {
   background: linear-gradient(90deg, #711f8d 1.14%, #a818da 100%);
   color: #fff;
 
+  grid-column: 1 / -1;
   font-size: 1rem;
   font-style: normal;
   font-weight: 700;
