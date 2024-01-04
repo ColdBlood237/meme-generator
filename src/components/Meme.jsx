@@ -13,11 +13,10 @@ export default function Meme() {
     fetch("https://api.imgflip.com/get_memes")
       .then((res) => res.json())
       .then((data) => setAllMemes(data.data.memes));
-    console.log(allMemes);
   }, []);
 
   function getMemeImage() {
-    let randomNumber = Math.floor(Math.random() * 100);
+    let randomNumber = Math.floor(Math.random() * allMemes.length);
     setMeme((prev) => ({
       ...prev,
       randomImage: allMemes[randomNumber].url,
@@ -28,6 +27,7 @@ export default function Meme() {
     const { value, name } = event.target;
     setMeme((prev) => {
       return {
+        ...prev,
         [name]: value,
       };
     });
